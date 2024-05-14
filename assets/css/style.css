@@ -188,13 +188,12 @@ input, select, textarea {
 	}
 
 		p.major {
-			font-size: 1.25rem;
+			font-size: 1rem;
 		}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
 		line-height: 1.375;
-		letter-spacing: -0.05em;
 		margin: 0 0 1rem 0;
 	}
 
@@ -3576,7 +3575,7 @@ input, select, textarea {
 		}
 
 		.banner.style1.fullscreen {
-			min-height: 100vh;
+			min-height: 70vh;
 		}
 
 			@media screen and (orientation: portrait) {
@@ -8601,3 +8600,31 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+			
+.image-sponsor img {
+    max-width: 100%; /* Set the maximum width to 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.flex-container {
+    display: flex;
+	justify-content: center;
+    align-items: center;	
+}
+
+.flex-item {
+    text-align: center;
+    margin: 0px; /* Adjust the margin to reduce the space */
+	padding-top: 50px;
+	padding-right: 80px;
+	padding-bottom: 0px;
+	padding-left: 80px;
+    width: 325px;
+    height: 325px;	
+}
+
+/* Resize images */
+.flex-item img {
+    width: 100%;
+    height: auto;
+}
