@@ -8721,7 +8721,7 @@ nav li:first-child{
 }
 
 .highlighted {
-    font-weight: 400; /* Normal weight */
+    font-weight: 400; /* check */
     font-stretch: 10%; /* Adjust to your preference */
     padding-top: 20px;
 	font-size: 1.15rem;
