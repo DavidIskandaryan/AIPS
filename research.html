@@ -43,50 +43,35 @@
 		
     </head>
     <body data-spy="scroll" data-target=".navbar-collapse">
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <header id="main_menu" class="header navbar-fixed-top custom-navbar">            
-            <div class="main_menu_bg2">
-                <div class="container2">
-                    <div class="row">
-                        <div class="nave_menu2">
-                            <nav class="navbar navbar-default" id="navmenu">
-                                <div class="container-fluid">
-                                    <!-- Brand and toggle get grouped for better mobile display -->
- 
+	   <nav>
+		<ul class="sidebar">
+		  <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="research.html">Research</a></li>
+		  <li><a href="team.html">Team</a></li>
+		  <li><a href="contact.html">Contact</a></li>
+		</ul>
+		<ul>
+		  <li class="hideOnMobile"><a href="index.html">Home</a></li>
+		  <li class="hideOnMobile"><a href="research.html">Research</a></li>
+		  <li class="hideOnMobile"><a href="team.html">Team</a></li>
+		  <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+		  <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+		</ul>
+	  </nav>
+
+	  <script>
+		function showSidebar(){
+		  const sidebar = document.querySelector('.sidebar')
+		  sidebar.style.display = 'flex'
+		}
+		function hideSidebar(){
+		  const sidebar = document.querySelector('.sidebar')
+		  sidebar.style.display = 'none'
+		}
+	  </script>
 
 
-                                    <!-- Collect the nav links, forms, and other content for toggling -->
-
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-
-                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                        <ul class="nav navbar-nav navbar-right">
-                                            <li class= "navbar-li"><a href="index.html">Home</a></li>
-					    <li class= "navbar-li"><a href="research.html">Research</a></li>
-                                            <li class= "navbar-li"><a href="team.html">Team</a></li>
-					    <li class= "navbar-li"><a href="contact.html">Contact</a></li>	
-                                        </ul>    
-                                    </div>
-
-                                </div>
-                            </nav>
-                        </div>	
-                    </div>
-
-                </div>
-
-            </div>
-        </header> <!--End of header -->
-
-
-		<div class="buffer"></div>
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
 
