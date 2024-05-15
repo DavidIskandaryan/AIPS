@@ -8708,10 +8708,8 @@ nav li:first-child{
 
 .center-text {
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 0 auto; /* Horizontal centering */
+  width: 50%; /* Adjust the width as needed */
 }
 
 .center-text2 {
@@ -8720,4 +8718,11 @@ nav li:first-child{
   top: 22%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.highlighted {
+    font-weight: 400; /* Normal weight */
+    font-stretch: 10%; /* Adjust to your preference */
+    padding-top: 20px;
+	font-size: 1.15rem;
 }
